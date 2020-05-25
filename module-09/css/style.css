@@ -124,6 +124,10 @@ p {
     --secondary-font: "Roboto", sans-serif;
 }
 
-.page-navigation {
-    flex-basis: 178px;
+/* .registration-form {
+  flex-basis: 178px;
 }
+
+.logo {
+  flex-basis: 178px;
+} */
