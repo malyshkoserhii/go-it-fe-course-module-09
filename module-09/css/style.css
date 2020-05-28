@@ -124,10 +124,133 @@ p {
     --secondary-font: "Roboto", sans-serif;
 }
 
-/* .registration-form {
-  flex-basis: 178px;
+/* HEADER  */
+
+.page-header {
+    position: relative;
+}
+
+.header-box {
+    position: absolute;
+    z-index: 10;
+}
+
+.registration-form {
+    display: flex;
+    justify-content: center;
+}
+
+
+.btn-wrapper:not(:last-child) {
+    margin-right: 20px;
+}
+
+.log-in,
+.sign-up {
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 32px;
+    padding: 0px 16px;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    border: none;
+}
+
+.sign-up {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
 }
 
 .logo {
-  flex-basis: 178px;
-} */
+    font-family: var(--main-font);
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+/* SECTION HOLIDAY DREAMS  */
+
+.holiday-dreams {
+    background-image: url("../img/header-mobile.png");
+    background-color: rgb(26, 25, 21);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 227px 0px 138px;
+}
+
+.main-title {
+    font-family: var(--main-font);
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-title-description {
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.find-partner-link {
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 78, 80);
+    border-radius: 20px;
+    width: 280px;
+    margin: 0px auto;
+}
+
+@media (max-width: 767px) {
+    .header-box {
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .logo {
+        display: block;
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    .registration-form {
+        margin-bottom: 118px;
+    }
+
+    .main-title-description-br {
+        display: block;
+    }
+}
+
+@media (min-width: 576px) {
+    .holiday-dreams {
+        background-image: url("../img/header-tablet.png");
+    }
+}
+
+@media (min-width: 768px) {
+    .registration-form {
+        justify-content: flex-end;
+    }
+
+    .header-box {
+        top: 38px;
+        left: 0px;
+    }
+
+    .main-title-description-br {
+        display: inline;
+    }
+}
