@@ -140,7 +140,6 @@ p {
     justify-content: center;
 }
 
-
 .btn-wrapper:not(:last-child) {
     margin-right: 20px;
 }
@@ -190,6 +189,10 @@ p {
     margin-bottom: 20px;
 }
 
+.main-titile-br {
+    display: block;
+}
+
 .main-title-description {
     font-family: var(--secondary-font);
     font-size: 18px;
@@ -212,6 +215,133 @@ p {
     margin: 0px auto;
 }
 
+/* SECTION MEET PARTNER */
+.meet-partner {
+    padding: 75px 0 58px;
+}
+
+.meet-partner-title-row {
+    margin-bottom: 20px;
+}
+
+.partners-info {
+    margin-bottom: 30px;
+}
+
+.meet-partner-title {
+    font-family: var(--main-font);
+    font-size: 24px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+}
+
+.partner-photo-wrapper {
+    width: 126px;
+    margin: 0px auto 22px;
+    position: relative;
+}
+
+.partner-photo {
+    border-radius: 50%;
+}
+
+.tv::before {
+    content: "";
+    background-image: url("../img/tv.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 78, 80);
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.flask::before {
+    content: "";
+    background-image: url("../img/flask.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 165, 7);
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.coffee::before {
+    content: "";
+    background-image: url("../img/coffee.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(28, 215, 173);
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.telegram::before {
+    content: "";
+    background-image: url("../img/telegram.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(78, 115, 219);
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.partner-name {
+    font-family: var(--main-font);
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.partner-description {
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    color: rgb(102, 102, 102);
+}
+
+.partner-description-br {
+    display: block;
+}
+
+.see-partner-link {
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 44px;
+    color: rgb(275, 78, 80);
+    /* width: 280px; */
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 78, 80);
+    border-radius: 20px;
+    margin: 0px auto;
+}
+
+
+
+
+
 @media (max-width: 767px) {
     .header-box {
         top: 20px;
@@ -232,15 +362,17 @@ p {
     .main-title-description-br {
         display: block;
     }
-}
 
-@media (min-width: 576px) {
-    .holiday-dreams {
-        background-image: url("../img/header-tablet.png");
+    .partner-card:not(:last-of-type) {
+        margin-bottom: 28px;
     }
 }
 
 @media (min-width: 768px) {
+    .holiday-dreams {
+        background-image: url("../img/header-tablet.png");
+    }
+
     .registration-form {
         justify-content: flex-end;
     }
@@ -250,7 +382,54 @@ p {
         left: 0px;
     }
 
+    .main-title {
+        font-size: 52px;
+        margin-bottom: 40px;
+    }
+
+    .main-titile-br {
+        display: inline-block;
+        width: max-content;
+    }
+
+    .main-title-description {
+        font-size: 24px;
+        margin-bottom: 37px;
+    }
+
     .main-title-description-br {
         display: inline;
+    }
+
+    .find-partner-link {
+        width: 226px;
+    }
+
+    .holiday-dreams {
+        padding-bottom: 232px;
+    }
+
+    /* MEET PARTNER SECTION 768px */
+
+    .partner-card:not(:nth-of-type(2n)) {
+        margin-bottom: 58px;
+    }
+
+    .meet-partner-title {
+        margin-bottom: 36px;
+    }
+
+    /* .see-partner-link {
+        width: 190px;
+    } */
+}
+
+@media (min-width: 992px) {
+    .holiday-dreams {
+        background-image: url("../img/header-desktop.png");
+    }
+
+    .partner-card:not(:nth-of-type(2n)) {
+        margin-bottom: 0px;
     }
 }
