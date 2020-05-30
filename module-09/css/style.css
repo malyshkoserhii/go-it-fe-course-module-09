@@ -133,6 +133,8 @@ p {
 .header-box {
     position: absolute;
     z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .registration-form {
@@ -211,7 +213,6 @@ p {
     color: rgb(255, 255, 255);
     background-color: rgb(255, 78, 80);
     border-radius: 20px;
-    width: 280px;
     margin: 0px auto;
 }
 
@@ -331,22 +332,15 @@ p {
     text-align: center;
     line-height: 44px;
     color: rgb(275, 78, 80);
-    /* width: 280px; */
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(255, 78, 80);
     border-radius: 20px;
     margin: 0px auto;
 }
 
-
-
-
-
 @media (max-width: 767px) {
     .header-box {
         top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
     }
 
     .logo {
@@ -369,6 +363,10 @@ p {
 }
 
 @media (min-width: 768px) {
+    .logo {
+        text-align: center;
+    }
+
     .holiday-dreams {
         background-image: url("../img/header-tablet.png");
     }
@@ -379,7 +377,6 @@ p {
 
     .header-box {
         top: 38px;
-        left: 0px;
     }
 
     .main-title {
@@ -418,10 +415,6 @@ p {
     .meet-partner-title {
         margin-bottom: 36px;
     }
-
-    /* .see-partner-link {
-        width: 190px;
-    } */
 }
 
 @media (min-width: 992px) {

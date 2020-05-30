@@ -1,112 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework-module-09-Bootstrap-practice</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Homework-module-09-Bootstrap-practice</title>
-  <link rel="stylesheet" href="./css/normalize.css" />
-  <link rel="stylesheet" href="./css/bootstrap-grid.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
-
-<body>
-  <header class="page-header">
-    <div class="container-fluid header-box">
-      <div class="row flex-md-row-reverse justify-content-md-around align-items-md-center">
-        <nav class="col-12 col-md-4 page-navigation">
-          <form action="#" class="registration-form">
-            <div class="btn-wrapper">
-              <button class="log-in">Log in</button>
-            </div>
-            <div class="btn-wrapper">
-              <button class="sign-up">Sign up</button>
-            </div>
-          </form>
-        </nav>
-        <div class="col-12 col-md-4 logo-wrapper">
-          <a href="#" class="logo">URLAUBSGLÜCK</a>
-        </div>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="holiday-dreams">
-      <div class="container-fluid">
-        <div class="row justify-content-md-center">
-          <div class="col-12 col-md-9 holiday-dreams-wrapper">
-            <h1 class="main-title">
-              Share your <span class="main-titile-br">holiday dreams</span>
-            </h1>
-            <p class="main-title-description">
-              And find the perfect partner
-              <span class="main-title-description-br">to fullfill it</span>
-            </p>
-            <a href="#" class="find-partner-link">Find your holiday partner</a>
+  <body>
+    <header class="page-header">
+      <div class="container header-box">
+        <div
+          class="row flex-md-row-reverse justify-content-md-between align-items-md-center"
+        >
+          <nav class="col-12 col-md-4 col-lg-3 page-navigation">
+            <form action="#" class="registration-form">
+              <div class="btn-wrapper">
+                <button class="log-in">Log in</button>
+              </div>
+              <div class="btn-wrapper">
+                <button class="sign-up">Sign up</button>
+              </div>
+            </form>
+          </nav>
+          <div class="col-12 col-md-4 logo-wrapper">
+            <a href="#" class="logo">URLAUBSGLÜCK</a>
           </div>
         </div>
       </div>
-    </section>
-    <section class="meet-partner">
-      <div class="container-fluid ">
-        <div class="row meet-partner-title-row">
-          <div class="col-12">
-            <h2 class="meet-partner-title">Meet a partner for your <span class="meet-partner-title-br">best
-                holiday</span>
-            </h2>
+    </header>
+    <main>
+      <section class="holiday-dreams">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-9 col-lg-6 holiday-dreams-wrapper">
+              <h1 class="main-title">
+                Share your <span class="main-titile-br">holiday dreams</span>
+              </h1>
+              <p class="main-title-description">
+                And find the perfect partner
+                <span class="main-title-description-br">to fullfill it</span>
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-9 col-sm-6 col-md-4">
+              <a href="#" class="find-partner-link"
+                >Find your holiday partner</a
+              >
+            </div>
           </div>
         </div>
-        <div class="row justify-content-md-center partners-info">
-          <div class="col-12 col-md-5 col-lg-3 order-md-first partner-card">
-            <div class="partner-photo-wrapper tv">
-              <img src="./img/bradley-hunter.png" alt="bradley-hunter-photo" class="partner-photo" width="122"
-                height="122" />
+      </section>
+      <section class="meet-partner">
+        <div class="container">
+          <div class="row meet-partner-title-row">
+            <div class="col-12">
+              <h2 class="meet-partner-title">
+                Meet a partner for your
+                <span class="meet-partner-title-br">best holiday</span>
+              </h2>
             </div>
-            <h3 class="partner-name">Bradley Hunter</h3>
-            <p class="partner-description">Based in Chicago. I love playing <span class="partner-description-br">tennis
-                and loudmusic.</span></p>
           </div>
-          <div class="col-12 col-md-5 col-lg-3 order-md-3 partner-card">
-            <div class="partner-photo-wrapper flask">
-              <img src="./img/lucas-marsha.png" alt="lucas-marsha-photo" class="partner-photo" width="122"
-                height="122" />
+          <div class="row justify-content-md-center partners-info">
+            <div class="col-12 col-md-5 col-lg-3 order-md-first partner-card">
+              <div class="partner-photo-wrapper tv">
+                <img
+                  src="./img/bradley-hunter.png"
+                  alt="bradley-hunter-photo"
+                  class="partner-photo"
+                  width="122"
+                  height="122"
+                />
+              </div>
+              <h3 class="partner-name">Bradley Hunter</h3>
+              <p class="partner-description">
+                Based in Chicago. I love playing
+                <span class="partner-description-br"
+                  >tennis and loudmusic.</span
+                >
+              </p>
             </div>
-            <h3 class="partner-name">Lucas Marsha</h3>
-            <p class="partner-description">I get my inspiration from nature<span class="partner-description-br">and
-                objects around me. I have</span>
-              <span class="partner-description-br">apassion to
-                colours, typography</span>
-              <span class="partner-description-br">and skateboards.</span>
-            </p>
+            <div class="col-12 col-md-5 col-lg-3 order-md-3 partner-card">
+              <div class="partner-photo-wrapper flask">
+                <img
+                  src="./img/lucas-marsha.png"
+                  alt="lucas-marsha-photo"
+                  class="partner-photo"
+                  width="122"
+                  height="122"
+                />
+              </div>
+              <h3 class="partner-name">Lucas Marsha</h3>
+              <p class="partner-description">
+                I get my inspiration from nature<span
+                  class="partner-description-br"
+                  >and objects around me. I have</span
+                >
+                <span class="partner-description-br"
+                  >apassion to colours, typography</span
+                >
+                <span class="partner-description-br">and skateboards.</span>
+              </p>
+            </div>
+            <div class="col-12 col-md-5 col-lg-3 order-md-2 partner-card">
+              <div class="partner-photo-wrapper coffee">
+                <img
+                  src="./img/heather-walker.png"
+                  alt="heather-walker-photo"
+                  class="partner-photo"
+                  width="124"
+                  height="124"
+                />
+              </div>
+              <h3 class="partner-name">Heather Walker</h3>
+              <p class="partner-description">
+                I'm a happy person that loves
+                <span class="partner-description-br"
+                  >cats and climbing on mountains.</span
+                >
+              </p>
+            </div>
+            <div class="col-12 col-md-5 col-lg-3 order-md-4 partner-card">
+              <div class="partner-photo-wrapper telegram">
+                <img
+                  src="./img/bradley-hunter-2.png"
+                  alt="bradley-hunter-2-photo"
+                  class="partner-photo"
+                  width="126"
+                  height="126"
+                />
+              </div>
+              <h3 class="partner-name">Bradley Hunter</h3>
+              <p class="partner-description">
+                Based in Chicago. I love playing
+                <span class="partner-description-br"
+                  >tennis and loudmusic.</span
+                >
+              </p>
+            </div>
           </div>
-          <div class="col-12 col-md-5 col-lg-3 order-md-2 partner-card">
-            <div class="partner-photo-wrapper coffee">
-              <img src="./img/heather-walker.png" alt="heather-walker-photo" class="partner-photo" width="124"
-                height="124" />
+          <div class="row justify-content-center">
+            <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+              <a href="#" class="see-partner-link">See other partnes</a>
             </div>
-            <h3 class="partner-name">Heather Walker</h3>
-            <p class="partner-description">I'm a happy person that loves <span class="partner-description-br">cats and
-                climbing on mountains.</span>
-            </p>
-          </div>
-          <div class="col-12 col-md-5 col-lg-3 order-md-4 partner-card">
-            <div class="partner-photo-wrapper telegram">
-              <img src="./img/bradley-hunter-2.png" alt="bradley-hunter-2-photo" class="partner-photo" width="126"
-                height="126" />
-            </div>
-            <h3 class="partner-name">Bradley Hunter</h3>
-            <p class="partner-description">Based in Chicago. I love playing <span class="partner-description-br">tennis
-                and loudmusic.</span></p>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-sm-5 col-md-5">
-            <a href="" class="see-partner-link">See other partnes</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-</body>
-
+      </section>
+    </main>
+  </body>
 </html>
