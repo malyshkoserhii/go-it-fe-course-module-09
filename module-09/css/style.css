@@ -1,4 +1,5 @@
-* roboto-300 - latin */ @font-face {
+/* roboto-300 - latin */
+@font-face {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
@@ -124,12 +125,6 @@ p {
     --secondary-font: "Roboto", sans-serif;
 }
 
-/* HEADER  */
-
-.page-header {
-    position: relative;
-}
-
 .header-box {
     position: absolute;
     z-index: 10;
@@ -169,9 +164,8 @@ p {
     font-weight: 700;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
+    text-align: center;
 }
-
-/* SECTION HOLIDAY DREAMS  */
 
 .holiday-dreams {
     background-image: url("../img/header-mobile.png");
@@ -216,7 +210,6 @@ p {
     margin: 0px auto;
 }
 
-/* SECTION MEET PARTNER */
 .meet-partner {
     padding: 75px 0 58px;
 }
@@ -338,15 +331,15 @@ p {
     margin: 0px auto;
 }
 
+@media (min-width: 576px) {
+    .holiday-dreams {
+        background-image: url("../img/header-tablet.png");
+    }
+}
+
 @media (max-width: 767px) {
     .header-box {
         top: 20px;
-    }
-
-    .logo {
-        display: block;
-        width: max-content;
-        margin: 0 auto;
     }
 
     .registration-form {
@@ -363,10 +356,6 @@ p {
 }
 
 @media (min-width: 768px) {
-    .logo {
-        text-align: center;
-    }
-
     .holiday-dreams {
         background-image: url("../img/header-tablet.png");
     }
@@ -398,15 +387,9 @@ p {
         display: inline;
     }
 
-    .find-partner-link {
-        width: 226px;
-    }
-
     .holiday-dreams {
         padding-bottom: 232px;
     }
-
-    /* MEET PARTNER SECTION 768px */
 
     .partner-card:not(:nth-of-type(2n)) {
         margin-bottom: 58px;
